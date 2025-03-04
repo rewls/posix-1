@@ -24,7 +24,7 @@
 
 '''
 
-* In the compilation of an application that *#define*s a feature test macro
+* In the compilation of an application that **#define**s a feature test macro
   specified by POSIX.1-2017, no header defined by POSIX.1-2017 shall be
   included prior to the definition of the feature test macro.
 * This restriction also applies to any implementation-provided header in which
@@ -37,7 +37,7 @@
 ==== The _POSIX_C_SOURCE Feature Test Macro
 
 * A POSIX-conforming application shall ensure that the feature test macro
-  `_POSIX_C_SOURCE` is defined before inclusion of any header.
+  _POSIX_C_SOURCE is defined before inclusion of any header.
 
 '''
 
@@ -61,8 +61,8 @@
 
 [NOTE]
 ====
-* The POSIX.1-1990 standard specified a macro called `_POSIX_SOURCE`.
-* This has been superseded by `_POSIX_C_SOURCE`.
+* The POSIX.1-1990 standard specified a macro called _POSIX_SOURCE.
+* This has been superseded by _POSIX_C_SOURCE.
 ====
 
 === 2.2.2 The Name Space
@@ -94,18 +94,18 @@
    for use as an identifier with file scope in the same name space if the
    header is included.
 
-* The prefixes posix_, POSIX_, and _POSIX_ are reserved for use by
+* The prefixes posix_, POSIX_, and \_POSIX_ are reserved for use by
   POSIX.1-2017 and other POSIX standards.
 * Implementations may add symbols to the headers shown in the following table,
   provided the identifiers for those symbols either:
 1. Begin with the corresponding reserved prefixes in the table, or
 2. Have one of the corresponding complete names in the table, or
 3. End in the string indicated as a reserved suffix in the table and do not
-   use the reserved prefixes posix_, POSIX_, or _POSIX_, as long as the
+   use the reserved prefixes posix_, POSIX_, or \_POSIX_, as long as the
    reserved suffix is in that part of the name considered significant by the
    implementation.
 
-* Symbols that use the reserved prefix _POSIX_ may be made visible by
+* Symbols that use the reserved prefix \_POSIX_ may be made visible by
   implementations in any header defined by POSIX.1-2017.
 
 [%autowidth]
